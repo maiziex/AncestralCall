@@ -13,14 +13,17 @@ chmod +x install.sh
 ./install.sh
 ```
 
+## source folder:
+After "./install.sh", a folder "source" would be download, it includes human GRCh38 reference fasta file, and reference fasta file for Orangutan and Chimpanzee.  
+
 ## Running The Code:
-Put the "Ancestral/bin" in the ".bashrc" file, and source the ".bashrc" file
+Put the "Ancestral/bin" in the ".bashrc" file, and source the ".bashrc" file <br />
 Or use the fullpath of "Run_all_samples.py"
 
 
 ### Step 1: Generate "merged.vcf" for all samples, and single vcf for each sample
 ```
-Run_all_samples.py --ref_dir ./GRCh38_reference/ --in_dir ./diploid_contig/ --out_dir ./test/ --ref_file ./GRCh38_reference/genome.fa  --SV_len 20  --species_name_list "Chimp","Orang" --species_ref_list "pan_troglodytes_ref.fasta","pongo_abelii_ref.fasta" --num_threads 10 --sample_list 'HG00250','HG00353','HG00512'
+Run_all_samples.py --in_dir ./diploid_contig/ --out_dir ./test/ --ref_file ./source/genome.fa  --SV_len 20  --species_name_list "Chimp","Orang" --species_ref_list "./source/pan_troglodytes_ref.fasta","./source/pongo_abelii_ref.fasta" --num_threads 10 --sample_list 'HG00250','HG00353','HG00512'
 ```
 --ref_dir: "./GRCh38_reference/" is the folder to store all reference files which would be downloaded by running "./install.sh".  <br />
 --in_dir: "./diploid_contig/" is the input folder where you store the diploid assembled contig files. <br />
