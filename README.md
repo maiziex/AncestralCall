@@ -32,5 +32,5 @@ Run_all_samples.py --ref_dir ./GRCh38_reference/ --in_dir ./diploid_contig/ --ou
 --num_threads: "10" is the number of threads you can define, which corresponds to number of samples.  <br />
 --sample_list: 'HG00250','HG00353','HG00512' are the sample names corresponding to your contig files, which is the prefix of the contig files. <br />
 
-### Step 2: Generate all the multiple-alignment files for each sample. 
+### Step 2: Generate all the multiple-alignments files for each sample. 
 
