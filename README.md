@@ -8,7 +8,7 @@ git clone https://github.com/maiziex/AncestralCall.git
 
 ## Install:
 ```
-cd AncetralCall
+cd AncestralCall
 chmod +x install.sh
 ./install.sh
 ```
