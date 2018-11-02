@@ -24,7 +24,7 @@ Run_all_samples.py --ref_dir ./GRCh38_reference/ --in_dir ./diploid_contig/ --ou
 ```
 --ref_dir: "./GRCh38_reference/" is the folder to store all reference files which would be downloaded by running "./install.sh".  <br />
 --in_dir: "./diploid_contig/" is the input folder where you store the diploid assembled contig files. <br />
---out_dir: "./results/" is the folder you want to store the final results. <br />
+--out_dir: "./results/" is the folder name you can define to store the final results. <br />
 --ref_file: "./GRCh38_reference/genome.fa" is the human reference fasta file which would be download by running "./install.sh"
 --SV_len: "20" is the SV size you can define.  <br />
 --species_name_list: "Chimp","Orang" are the species's name you can define. Each name is seperately by comma (","). <br />
