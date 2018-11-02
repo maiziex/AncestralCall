@@ -1,3 +1,8 @@
+# change permission
+cd bin
+chmod +x Run_all_samples.py
+cd ..
+
 # install trf
 cd trf_tools
 chmod +x trf
