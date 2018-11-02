@@ -14,7 +14,7 @@ chmod +x install.sh
 ```
 
 ## source folder:
-After "./install.sh", a folder "source" would be download, it includes human GRCh38 reference fasta file, and reference fasta file for Orangutan and Chimpanzee.  
+After running "./install.sh", a folder "source" would be download, it includes human GRCh38 reference fasta file, and reference fasta file for Orangutan and Chimpanzee.  
 
 ## Running The Code:
 Put the "Ancestral/bin" in the ".bashrc" file, and source the ".bashrc" file <br />
