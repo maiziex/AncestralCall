@@ -1,10 +1,14 @@
 # AncestralCall
 Assemblies based structral variants calling for multiple samples, including anotation for Alu, Tandem Repeats, Ancestral call. 
 output: merged.vcf for multiple samples, and single vcf for each sample. 
+
 ## Download:
 ```
 git clone https://github.com/maiziex/AncestralCall.git
 ```
+
+## Dependencies:
+Ancestral utilizes <a href="https://www.python.org/downloads/">Python3</a>, <a href="http://bio-bwa.sourceforge.net/">paftools (Called haploid assemblies based variants)</a>, <a href="http://samtools.sourceforge.net/">SAMtools</a>, and <a href="http://broadinstitute.github.io/picard/">trf(Tandem Repeats Finder)</a>. To be able to execute the above programs by typing their name on the command line, the program executables must be in one of the directories listed in the PATH environment variable. Or you could just run "./install.sh" to install them along with AncestralCall. 
 
 ## Install:
 ```
