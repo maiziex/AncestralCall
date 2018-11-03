@@ -25,7 +25,7 @@ Or use the fullpath of "Run_all_samples.py"
 ```
 Run_all_samples.py --in_dir ./diploid_contig/ --out_dir ./results/ --ref_file ./source/genome.fa  --SV_len 20  --species_name_list "Chimp","Orang" --species_ref_list "./source/pan_troglodytes_ref.fasta","./source/pongo_abelii_ref.fasta" --num_threads 10 --sample_list 'HG00250','HG00353','HG00512'
 ```
---ref_dir: "./GRCh38_reference/" is the folder to store all reference files which would be downloaded by running "./install.sh".  <br />
+
 --in_dir: "./diploid_contig/" is the input folder where you store the diploid assembled contig files. <br />
 --out_dir: "./results/" is the folder name you can define to store the final results. <br />
 --ref_file: "./GRCh38_reference/genome.fa" is the human reference fasta file which would be download by running "./install.sh"
