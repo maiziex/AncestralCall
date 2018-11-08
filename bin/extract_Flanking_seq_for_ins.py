@@ -89,7 +89,7 @@ if __name__ == "__main__":
         os.makedirs(out_dir)
     sample_name = args.sample_name
     flanking_fasta = out_dir + sample_name + "_ins_for_flankingseq.fasta"
-    ins_vcf = in_dir + sample_name + "_INS_with_alu_with_repeats.vcf"
+    ins_vcf = in_dir + sample_name + "_temp_ins_2.vcf"
     fw = open(flanking_fasta,"w")
     for ii in range(1,23):
         print("chr" + str(ii))
