@@ -25,10 +25,7 @@ conda install -c bioconda bcftools
 conda install -c bioconda htslib 
 
 
-
-
-
-echo 'You have installed AncetralCall and the dependencies successfully!'
+echo 'You have installed AncetralCall's dependencies and downloaded the source files successfully!'
  
 
 
