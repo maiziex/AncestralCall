@@ -13,14 +13,15 @@ git clone https://github.com/lh3/minimap2
 cd minimap2 && make
 cd ..
 
+# download the reference file (GRCh38)
+wget http://xinzhouneuroscience.org/wp-content/uploads/2018/10/source.tar.gz
+tar -xvf source.tar.gz
+
 # download k8
 wget https://github.com/attractivechaos/k8/releases/download/v0.2.4/k8-0.2.4.tar.bz2 
 tar xvjf k8-0.2.4.tar.bz2
 rm k8-0.2.4.tar.bz2
 
-# download the reference file (GRCh38)
-wget http://xinzhouneuroscience.org/wp-content/uploads/2018/10/source.tar.gz
-tar -xvf source.tar.gz
 
 if ! [ -x "$(command -v samtools)" ];
 then
