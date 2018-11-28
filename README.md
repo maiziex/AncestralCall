@@ -52,7 +52,7 @@ Run_all_samples.py --in_dir ./diploid_contig/ --out_dir ./results/ --ref_file ./
 "20" is the SV size you can define.<br />
 <br /> 
 --num_threads: Optional parameter, default = 2 <br />
-"10" is the number of threads you can define, which corresponds to number of samples. default = 2 <br />
+"10" is the number of threads you can define, which corresponds to number of samples.<br />
 <br /> 
 ### Step 2: Generate all the multiple-alignments files for each sample. 
 
