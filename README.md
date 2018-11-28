@@ -31,14 +31,22 @@ Or use the fullpath of "Run_all_samples.py"
 Run_all_samples.py --in_dir ./diploid_contig/ --out_dir ./results/ --ref_file ./source/genome.fa  --SV_len 20  --species_name_list "Chimp","Orang" --species_ref_list "./source/pan_troglodytes_ref.fasta","./source/pongo_abelii_ref.fasta" --num_threads 10 --sample_list 'HG00250','HG00353','HG00512'
 ```
 
---in_dir: Required augument. "./diploid_contig/" is the input folder where you store the diploid assembled contig files. <br />
---out_dir: "./results/" is the folder name you can define to store the final results. default = ./Ancestral_results/ <br />
---ref_file: Required augument. "./GRCh38_reference/genome.fa" is the human reference fasta file which can be download by running "./install.sh". <br />
---SV_len: "20" is the SV size you can define. default = 20 <br />
---species_name_list: Required augument. "Chimp","Orang" are the species's name you can define. Each name is seperately by comma (","). <br />
---species_ref_list: Required augument. "pan_troglodytes_ref.fasta","pongo_abelii_ref.fasta" are the reference fasta files for each species which you defined in the "--species_name_list", respectivley. Each reference file is seperately by comma (",") <br />
---num_threads: "10" is the number of threads you can define, which corresponds to number of samples. default = 2 <br />
---sample_list: Required augument. 'HG00250','HG00353','HG00512' are the sample names corresponding to your contig files, which is the prefix of the contig files. <br />
+--in_dir: Required parameter. <br />
+"./diploid_contig/" is the input folder where you store the diploid assembled contig files. <br />
+--out_dir: Optional parameter, default = ./Ancestral_results/  <br />
+"./results/" is the folder name you can define to store the final results.  <br />
+--ref_file: Required augument. <br />
+"./GRCh38_reference/genome.fa" is the human reference fasta file which can be download by running "./install.sh". <br />
+--SV_len: Optional parameter, default = 20 <br />
+"20" is the SV size you can define.<br />
+--species_name_list: Required parameter. <br />
+"Chimp","Orang" are the species's name you can define. Each name is seperately by comma (","). <br />
+--species_ref_list: Required parameter.<br />
+"pan_troglodytes_ref.fasta","pongo_abelii_ref.fasta" are the reference fasta files for each species which you defined in the "--species_name_list", respectivley. Each reference file is seperately by comma (",") <br />
+--num_threads: Optional parameter, default = 2 <br />
+"10" is the number of threads you can define, which corresponds to number of samples. default = 2 <br />
+--sample_list: Required parameter. <br />
+'HG00250','HG00353','HG00512' are the sample names corresponding to your contig files, which is the prefix of the contig files. <br />
 
 ### Step 2: Generate all the multiple-alignments files for each sample. 
 
