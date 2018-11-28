@@ -44,6 +44,7 @@ Run_all_samples.py --in_dir ./diploid_contig/ --out_dir ./results/ --ref_file ./
 <br /> 
 --sample_list: Required parameter. <br />
 'HG00250','HG00353','HG00512' are the sample names corresponding to your contig files, which is the prefix of the contig files. <br />
+<br />
 --out_dir: Optional parameter, default = ./Ancestral_results/  <br />
 "./results/" is the folder name you can define to store the final results.  <br />
 <br />
