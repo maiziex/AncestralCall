@@ -1,6 +1,6 @@
 # change permission
 cd bin
-chmod +x Run_all_samples.py
+chmod +x *.py
 cd ..
 
 # install trf
