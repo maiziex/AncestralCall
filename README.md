@@ -34,11 +34,9 @@ Run_all_samples.py --in_dir ./diploid_contig/ --out_dir ./results/ --ref_file ./
 --in_dir: Required parameter. <br />
 "./diploid_contig/" is the input folder where you store the diploid assembled contig files. <br />
 <br />
-
 --out_dir: Optional parameter, default = ./Ancestral_results/  <br />
 "./results/" is the folder name you can define to store the final results.  <br />
 <br />
-
 --ref_file: Required augument. <br />
 "./GRCh38_reference/genome.fa" is the human reference fasta file which can be download by running "./install.sh". <br />
 <br /> 
