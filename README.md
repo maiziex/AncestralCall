@@ -36,22 +36,22 @@ Run_all_samples.py --in_dir ./diploid_contig/ --out_dir ./results/ --ref_file ./
 ##### --ref_file: Required augument. 
 "./GRCh38_reference/genome.fa" is the human reference fasta file which can be download by running "./install.sh". 
 
-#####  --species_name_list: Required parameter. <br />
+#####  --species_name_list: Required parameter. 
 "Chimp","Orang" are the species's name you can define. Each name is seperately by comma (","). 
 
-#####  --species_ref_list: Required parameter.<br />
+#####  --species_ref_list: Required parameter.
 "pan_troglodytes_ref.fasta","pongo_abelii_ref.fasta" are the reference fasta files for each species which you defined in the "--species_name_list", respectivley. Each reference file is seperately by comma (",") 
  
-#####  --sample_list: Required parameter. <br />
+#####  --sample_list: Required parameter. 
 'HG00250','HG00353','HG00512' are the sample names corresponding to your contig files, which is the prefix of the contig files. 
 
-#####  --out_dir: Optional parameter, default = ./Ancestral_results/  <br />
+#####  --out_dir: Optional parameter, default = ./Ancestral_results/  
 "./results/" is the folder name you can define to store the final results.  
 
-#####  --SV_len: Optional parameter, default = 20 <br />
+#####  --SV_len: Optional parameter, default = 20 
 "20" is the SV size you can define.
 
-#####  --num_threads: Optional parameter, default = 2 <br />
+#####  --num_threads: Optional parameter, default = 2 
 "10" is the number of threads you can define, which corresponds to number of samples.
 
 ### Step 2: Generate all the multiple-alignments files for each sample. 
