@@ -158,39 +158,18 @@ def extract_flanking_seq_ins(in_dir,out_dir,sample_name):
     print("extract flanking seq done~")
 
 
-def map_cmd(monkey_ref, flanking_fasta,flanking_sam,xin):
-    use_cmd = other_tools_path + "minimap2/minimap2 -a " + monkey_ref + " " + flanking_fasta + " > " + flanking_sam
-    Popen(use_cmd,shell=True).wait()
-
-
-def samtobam_cmd(flanking_sam,flanking_bam,xin):
-    use_cmd = "samtools view -Sb " + flanking_sam + " > " + flanking_bam
-    Popen(use_cmd,shell=True).wait()
-
-
-def sortbam_cmd(flanking_bam,flanking_bam_sorted,xin):
-    use_cmd =  "samtools sort " + flanking_bam + " -o " + flanking_bam_sorted
-    Popen(use_cmd,shell=True).wait()
-
-
-def idxbam_cmd(flanking_bam_sorted,xin):
-    use_cmd = "samtools index " +  flanking_bam_sorted
-    Popen(use_cmd,shell=True).wait()
-
-
 def align_to_monkeys(monkey_ref,flanking_fasta,out_dir,sample_name,monkey_name,variant_type):
     flanking_sam = out_dir + sample_name + "_" + monkey_name + "_" + variant_type + "_for_flankingseq.sam"
     flanking_bam = out_dir + sample_name + "_" + monkey_name + "_" + variant_type + "_for_flankingseq.bam"
     flanking_bam_sorted = out_dir + sample_name + "_" + monkey_name + "_" + variant_type + "_for_flankingseq_sorted.bam"
-    pool = Pool(processes=4)
-    pool.apply_async(map_cmd,(monkey_ref,flanking_fasta,flanking_sam,"xin"))
-    pool.apply_async(samtobam_cmd,(flanking_sam,flanking_bam,"xin"))
-    pool.apply_async(sortbam_cmd,(flanking_bam,flanking_bam_sorted,"xin"))
-    pool.apply_async(idxbam_cmd,(flanking_bam_sorted,"xin"))
-    pool.close()
-    while len(active_children()) > 1:
-        time.sleep(0.5)
-    pool.join()
+    use_cmd = other_tools_path + "minimap2/minimap2 -a " + monkey_ref + " " + flanking_fasta + " > " + flanking_sam
+    Popen(use_cmd,shell=True).wait()
+    use_cmd = "samtools view -Sb " + flanking_sam + " > " + flanking_bam
+    Popen(use_cmd,shell=True).wait()
+    use_cmd =  "samtools sort " + flanking_bam + " -o " + flanking_bam_sorted
+    Popen(use_cmd,shell=True).wait()
+    use_cmd = "samtools index " +  flanking_bam_sorted
+    Popen(use_cmd,shell=True).wait()
 
 
 def evaluate_ancestral_del(flanking_bam_sorted,sample_name,monkey_name,out_dir,in_vcf,out_vcf):
