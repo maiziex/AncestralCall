@@ -47,7 +47,7 @@ def sort_paf(hap_paf,hap_paf_sorted,xin):
 
 
 def get_var(hap_paf_sorted,hap_var_txt,xin):
-    use_cmd = other_tools_path + "/k8-0.2.4/k8-Darwin " + other_tools_path + "minimap2/misc/paftools.js " + " call -l 1 -L 1 -q 20 " +  hap_paf_sorted + " > " +  hap_var_txt 
+    use_cmd = other_tools_path + "/k8-0.2.4/k8-Linux " + other_tools_path + "minimap2/misc/paftools.js " + " call -l 1 -L 1 -q 20 " +  hap_paf_sorted + " > " +  hap_var_txt 
     Popen(use_cmd,shell=True).wait()
     
 
