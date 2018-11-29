@@ -70,8 +70,8 @@ def assembly_based_variants_call_sort(sample_name,out_dir):
     hap1_paf_sorted = out_dir + sample_name + "_hp1.paf.sorted"
     hap2_paf_sorted = out_dir + sample_name + "_hp2.paf.sorted" 
     pool = Pool(processes=2)
-    pool.apply_async(sort_paf,(hap1_file,hap1_paf_sorted,"xin"))
-    pool.apply_async(sort_paf,(hap2_file,hap2_paf_sorted,"xin"))
+    pool.apply_async(sort_paf,(hap1_paf,hap1_paf_sorted,"xin"))
+    pool.apply_async(sort_paf,(hap2_paf,hap2_paf_sorted,"xin"))
     pool.close()
     while len(active_children()) > 1:
         time.sleep(0.5)
