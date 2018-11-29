@@ -16,6 +16,7 @@ cd ..
 # download the reference file (GRCh38)
 wget http://xinzhouneuroscience.org/wp-content/uploads/2018/10/source.tar.gz
 tar -xvf source.tar.gz
+rm source.tar.gz
 
 # download k8
 wget https://github.com/attractivechaos/k8/releases/download/v0.2.4/k8-0.2.4.tar.bz2 
