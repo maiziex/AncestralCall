@@ -11,7 +11,7 @@ from multiprocessing import Pool,cpu_count,active_children,Manager
 import time
 parser = ArgumentParser(description="Run depth all:")
 parser.add_argument('--in_dir','-i_dir', help="The input folder where you store the diploid assembled contig files",required=True)
-parser.add_argument('--out_dir','-o_dir', help="The folder name you can define to store the final results",default="./Ancestral_results")
+parser.add_argument('--out_dir','-o_dir', help="The folder name you can define to store the final results",default="./Results")
 parser.add_argument('--ref_file','-r', help="The human reference fasta file which can be download by running \"./install.sh\". ",required=True)
 parser.add_argument('--SV_len','-l',type=int,help="The SV size you can define", default=20)
 parser.add_argument('--num_threads','-nt', help=" The number of threads you can define, which corresponds to number of samples",default=2)
