@@ -61,7 +61,7 @@ else
 fi
 
 
-echo 'You have installed AncetralCall's dependencies and downloaded the source files successfully!'
+echo 'You have installed AncetralCall dependencies and downloaded the source files successfully!'
  
 
 
