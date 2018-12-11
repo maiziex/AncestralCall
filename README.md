@@ -42,14 +42,11 @@ Run_all_samples.py --in_dir ./diploid_contig/ --out_dir ./results/ --ref_file ./
 #####  --sample_list: 'HG00250','HG00353','HG00512' are the sample names corresponding to your contig files, which is the prefix of the contig files. 
 
 #### Optional parameter
-#####  --out_dir: default = ./Ancestral_results/  
-"./results/" is the folder name you can define to store the final results.  
+#####  --out_dir: default = ./Ancestral_results/, "./results/" is the folder name you can define to store the final results.  
 
-#####  --SV_len: default = 20 
-"20" is the SV size you can define.
+#####  --SV_len: default = 20, it is the SV size you can define.
 
-#####  --num_threads: default = 2 
-"10" is the number of threads you can define, which corresponds to number of samples.
+#####  --num_threads: default = 2, "10" is the number of threads you can define, which corresponds to number of samples.
 
 ### Step 2: Generate all the multiple-alignments files for each sample. 
 
