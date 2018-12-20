@@ -1,6 +1,4 @@
 # AncestralCall
-Assemblies based structral variants calling for multiple samples, including anotation for Alu, Tandem Repeats, Ancestral call. 
-output: merged.vcf for multiple samples, and single vcf for each sample. 
 
 ## Download:
 ```
